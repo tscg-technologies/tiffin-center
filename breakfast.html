@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakfast Specials - Tiffin Center</title>
+  <meta name="description" content="Discover South Indian breakfast favourites at Tiffin Center: Steamed idlis, crispy medu vadas, golden dosas, poori saagu, ghee pongal and combos.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span>📍 Demo Street, Demo City, India</span>
+        <span>⏰ Breakfast Hours: 7:00 AM - 11:30 AM Daily</span>
+        <span>📞 +91 90000 00000</span>
+      </div>
+      <div>
+        <span class="demo-tag">Portfolio Demonstration Website</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍲</span>
+        <span>TIFFIN CENTER</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="breakfast.html" class="nav-link active">Breakfast</a></li>
+          <li><a href="lunch.html" class="nav-link">Lunch & Meals</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="order.html" class="nav-link">Order Online</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="order.html" class="cart-trigger-btn" aria-label="Shopping Cart">
+          🛒
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Breakfast Hero Section -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>South Indian Breakfast Specials</h1>
+        <p>Start your morning with freshly steamed idlis, golden crisp dosas, crunchy vadas, and piping hot filter coffee.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Breakfast</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Morning Highlights Banner -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div style="background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 2rem; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1.5rem; text-align: center;">
+          <div>
+            <span style="font-size: 2rem;">☀️</span>
+            <h4 style="margin: 0.3rem 0;">Fresh Morning Batches</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Piped steaming hot from 7:00 AM</p>
+          </div>
+          <div>
+            <span style="font-size: 2rem;">🥥</span>
+            <h4 style="margin: 0.3rem 0;">Freshly Grated Chutneys</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Coconut, tomato, and spicy ginger chutneys</p>
+          </div>
+          <div>
+            <span style="font-size: 2rem;">🧈</span>
+            <h4 style="margin: 0.3rem 0;">Pure Cow Ghee</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted);">Rich golden roast flavour in every bite</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breakfast Items Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header mx-auto text-center">
+          <span class="section-subtitle">Morning Menu</span>
+          <h2 class="section-title">Popular Morning Tiffin</h2>
+          <p class="section-desc">Each dish is crafted for nourishment and satisfaction.</p>
+        </div>
+
+        <div class="food-grid" id="breakfast-items-grid">
+          <!-- Populated by script for all breakfast items -->
+        </div>
+
+        <div class="text-center" style="margin-top: 3.5rem;">
+          <a href="order.html" class="btn btn-primary">Order Breakfast Online</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breakfast Combos Callout -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header mx-auto text-center">
+          <span class="section-subtitle">Great Value</span>
+          <h2 class="section-title">Morning Breakfast Combos</h2>
+          <p class="section-desc">Perfect assortments for when you want a little bit of everything.</p>
+        </div>
+
+        <div class="food-grid">
+          <!-- Idli + Vada Combo -->
+          <article class="food-card reveal">
+            <div class="food-card-img-wrapper ratio-4-3" style="overflow: hidden;">
+              <div class="veg-indicator"></div>
+              <span class="food-card-badge">Top Seller</span>
+              <img src="assets/images/dish-idli-vada-combo.jpg" alt="Idli and Vada Combo" class="food-card-img">
+            </div>
+            <div class="food-card-body">
+              <span class="food-card-category">Special Combos</span>
+              <h4 class="food-card-title">Idli + Vada Combo</h4>
+              <p class="food-card-desc">2 Steamed Idlis + 1 Medu Vada served with piping sambar & 2 chutneys.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹60 <span>Demo Price</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="sib-3">+ Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dosa + Coffee Combo -->
+          <article class="food-card reveal">
+            <div class="food-card-img-wrapper ratio-4-3" style="overflow: hidden;">
+              <div class="veg-indicator"></div>
+              <span class="food-card-badge">Classic Pair</span>
+              <img src="assets/images/hero-banner.jpg" alt="Dosa and Coffee Combo" class="food-card-img">
+            </div>
+            <div class="food-card-body">
+              <span class="food-card-category">Special Combos</span>
+              <h4 class="food-card-title">Dosa + Coffee Combo</h4>
+              <p class="food-card-desc">Golden crisp Plain or Masala Dosa accompanied by piping hot filter coffee.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹85 <span>Demo Price</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="com-1">+ Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Grand Breakfast Combo -->
+          <article class="food-card reveal">
+            <div class="food-card-img-wrapper ratio-4-3" style="overflow: hidden;">
+              <div class="veg-indicator"></div>
+              <span class="food-card-badge">Deluxe</span>
+              <img src="assets/images/dish-masala-dosa.jpg" alt="Breakfast Special Combo" class="food-card-img">
+            </div>
+            <div class="food-card-body">
+              <span class="food-card-category">Special Combos</span>
+              <h4 class="food-card-title">Breakfast Special Combo</h4>
+              <p class="food-card-desc">Mini Masala Dosa, 1 Steamed Idli, 1 Medu Vada, Sambar, Chutneys & Filter Coffee.</p>
+              <div class="food-card-footer">
+                <div class="food-price">₹100 <span>Demo Price</span></div>
+                <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="com-2">+ Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">TIFFIN CENTER</a>
+          <p class="footer-desc">Your everyday destination for freshly made South Indian tiffin, comforting meals, and filter coffee.</p>
+          <div class="footer-demo-badge">Generic Frontend Demo Project</div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Full Food Menu</a></li>
+            <li><a href="breakfast.html">Breakfast Specials</a></li>
+            <li><a href="lunch.html">Lunch & Meals</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Breakfast Hours</h4>
+          <p style="font-size: 0.9rem; color: #b09f95;">Daily Service: 7:00 AM – 11:30 AM</p>
+          <p style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;">Evening snacks resume at 4:30 PM</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Demo Contact</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #b09f95;">📍 Tiffin Center, Demo Street, Demo City</p>
+          <p style="font-size: 0.9rem; color: #b09f95;">📞 +91 90000 00000</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TIFFIN CENTER. All rights reserved. Built with HTML5, CSS3, & Vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('breakfast-items-grid');
+      // Filter items where isBreakfast is true
+      const breakfastItems = MENU_DATA.filter(item => item.isBreakfast);
+      container.innerHTML = breakfastItems.map(renderFoodCardHTML).join('');
+    });
+  </script>
+</body>
+</html>

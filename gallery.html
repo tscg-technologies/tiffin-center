@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Gallery - Tiffin Center</title>
+  <meta name="description" content="Explore our food preparation, authentic crispy dosas, fluffy idlis, traditional meals, and welcoming dining ambiance.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span>📍 Demo Street, Demo City, India</span>
+        <span>⏰ 7:00 AM – 10:00 PM</span>
+        <span>📞 +91 90000 00000</span>
+      </div>
+      <div>
+        <span class="demo-tag">Pure CSS Placeholders • Google Flow Ready</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🍲</span>
+        <span>TIFFIN CENTER</span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="breakfast.html" class="nav-link">Breakfast</a></li>
+          <li><a href="lunch.html" class="nav-link">Lunch & Meals</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="order.html" class="nav-link">Order Online</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="order.html" class="cart-trigger-btn" aria-label="Shopping Cart">
+          🛒
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </a>
+        <a href="order.html" class="btn btn-primary btn-sm">Order Now</a>
+        <button class="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Gallery Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Visual Food Gallery</h1>
+        <p>A peek into our everyday kitchen, crispy golden dosas, wholesome thalis, and bustling dining space.</p>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> &gt; <span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section with Category Filters -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Category Filter Tabs -->
+        <div class="filter-bar" id="gallery-filter-bar" style="margin-bottom: 2.5rem;">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+          <button class="filter-btn" data-filter="dosa">Dosa Varieties</button>
+          <button class="filter-btn" data-filter="meals">Traditional Meals</button>
+          <button class="filter-btn" data-filter="snacks">Snacks</button>
+          <button class="filter-btn" data-filter="beverages">Beverages</button>
+          <button class="filter-btn" data-filter="prep">Food Preparation</button>
+          <button class="filter-btn" data-filter="interior">Restaurant Interior</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-container">
+          
+          <!-- Item 1: Breakfast Idli -->
+          <div class="gallery-card reveal" data-category="breakfast" data-index="0" data-title="Steamed Idli & Medu Vada Combo" data-desc="Pillowy soft idlis and crunchy golden medu vada on a traditional compartment plate with fresh chutneys." data-img="assets/images/dish-idli-vada-combo.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/dish-idli-vada-combo.jpg" alt="Steamed Idli and Vada Combo" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Steamed Idli & Vada</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Breakfast Favourites</p>
+            </div>
+          </div>
+
+          <!-- Item 2: Butter Masala Dosa -->
+          <div class="gallery-card reveal" data-category="dosa" data-index="1" data-title="Crispy Butter Masala Dosa" data-desc="Golden, paper-thin roasted dosa wrapped around spiced potato masala with three signature chutneys." data-img="assets/images/dish-masala-dosa.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/dish-masala-dosa.jpg" alt="Crispy Butter Masala Dosa" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Crispy Butter Masala Dosa</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Dosa Varieties</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Traditional Meals Thali -->
+          <div class="gallery-card reveal" data-category="meals" data-index="2" data-title="South Indian Thali Feast" data-desc="Complete traditional banana-leaf meals platter with aromatic sambar, rasam, kootu, poriyal, payasam, and curd." data-img="assets/images/dish-south-indian-meals.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/dish-south-indian-meals.jpg" alt="South Indian Banana Leaf Meals" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>South Indian Thali Feast</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Traditional Meals</p>
+            </div>
+          </div>
+
+          <!-- Item 4: Evening Snacks -->
+          <div class="gallery-card reveal" data-category="snacks" data-index="3" data-title="Crispy Samosa, Mirchi Bajji & Punugulu" data-desc="Crispy deep-fried evening street snack platter served with tangy tamarind and mint chutneys and cutting chai." data-img="assets/images/dish-evening-snacks.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/dish-evening-snacks.jpg" alt="Hot Evening Snacks Assortment" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Evening Snack Assortment</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Snacks</p>
+            </div>
+          </div>
+
+          <!-- Item 5: Beverages Filter Coffee -->
+          <div class="gallery-card reveal" data-category="beverages" data-index="4" data-title="Traditional Degree Filter Coffee" data-desc="Slow-dripped decoction frothed high in traditional brass dabarah and tumbler with whole roasted coffee beans." data-img="assets/images/dish-filter-coffee.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/dish-filter-coffee.jpg" alt="Degree Filter Coffee in Brass Dabarah" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Degree Filter Coffee</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Beverages</p>
+            </div>
+          </div>
+
+          <!-- Item 6: Food Preparation -->
+          <div class="gallery-card reveal" data-category="prep" data-index="5" data-title="Live Tawa Dosa Craft" data-desc="Artisan master spreading golden fermented batter smoothly in a spiral over a sizzling cast-iron flat tawa." data-img="assets/images/food-prep-tawa.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/food-prep-tawa.jpg" alt="Live Tawa Dosa Making" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Live Tawa Roasting</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Kitchen Craft</p>
+            </div>
+          </div>
+
+          <!-- Item 7: Restaurant Interior -->
+          <div class="gallery-card reveal" data-category="interior" data-index="6" data-title="Warm Clean Dining Space" data-desc="Sunlit dining hall with solid oak tables, brass ambient lamps, and welcoming Indian hospitality." data-img="assets/images/restaurant-interior.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/restaurant-interior.jpg" alt="Clean Restaurant Dining Interior" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Dining Ambiance</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Interior & Atmosphere</p>
+            </div>
+          </div>
+
+          <!-- Item 8: Breakfast Feast Spread -->
+          <div class="gallery-card reveal" data-category="breakfast" data-index="7" data-title="Grand Morning Tiffin Spread" data-desc="A full morning table featuring fresh masala dosa, steamed idlis, medu vadas, sambar, and hot filter coffee." data-img="assets/images/hero-banner.jpg">
+            <div class="ratio-4-3" style="overflow: hidden;">
+              <img src="assets/images/hero-banner.jpg" alt="Grand Morning Breakfast Spread" class="gallery-img">
+            </div>
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Grand Breakfast Feast</h4>
+              <p style="font-size: 0.85rem; color: #f3dec2;">Signature Feast</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="gallery-lightbox" aria-hidden="true" role="dialog">
+      <div class="lightbox-container">
+        <button class="lightbox-close-btn" id="lightbox-close-btn" aria-label="Close modal">&times;</button>
+        <div style="padding: 1.5rem 1.5rem 0;" id="lightbox-placeholder-view">
+          <!-- Lightbox Placeholder Clone rendered here -->
+        </div>
+        <div class="lightbox-content-box">
+          <h3 id="lightbox-title" style="margin-bottom: 0.5rem; color: var(--primary);">Image Title</h3>
+          <p id="lightbox-desc" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">Image Description</p>
+          <div class="lightbox-controls">
+            <button class="btn btn-outline btn-sm" id="lightbox-prev-btn">&larr; Previous</button>
+            <span id="lightbox-counter" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">1 / 8</span>
+            <button class="btn btn-primary btn-sm" id="lightbox-next-btn">Next &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">TIFFIN CENTER</a>
+          <p class="footer-desc">Your everyday destination for freshly made South Indian tiffin, comforting meals, and filter coffee.</p>
+          <div class="footer-demo-badge">Generic Frontend Demo Project</div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Full Food Menu</a></li>
+            <li><a href="breakfast.html">Breakfast Specials</a></li>
+            <li><a href="lunch.html">Lunch & Meals</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Image Replacement</h4>
+          <p style="font-size: 0.85rem; color: #b09f95;">All visual gallery cards are pure CSS mockups structured for drop-in Google Flow image imports.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Demo Contact</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 0.8rem; color: #b09f95;">📍 Tiffin Center, Demo Street, Demo City</p>
+          <p style="font-size: 0.9rem; color: #b09f95;">📞 +91 90000 00000</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 TIFFIN CENTER. All rights reserved. Built with HTML5, CSS3, & Vanilla JavaScript.</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Gallery Filter & Lightbox Logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('#gallery-filter-bar .filter-btn');
+      const cards = Array.from(document.querySelectorAll('.gallery-card'));
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lightboxPlaceholder = document.getElementById('lightbox-placeholder-view');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDesc = document.getElementById('lightbox-desc');
+      const lightboxCounter = document.getElementById('lightbox-counter');
+      const closeBtn = document.getElementById('lightbox-close-btn');
+      const prevBtn = document.getElementById('lightbox-prev-btn');
+      const nextBtn = document.getElementById('lightbox-next-btn');
+
+      let visibleCards = [...cards];
+      let currentIndex = 0;
+
+      // Filter handling
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.getAttribute('data-filter');
+
+          visibleCards = [];
+          cards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+              visibleCards.push(card);
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Open Lightbox
+      function openLightbox(index) {
+        if (visibleCards.length === 0) return;
+        currentIndex = (index + visibleCards.length) % visibleCards.length;
+        const currentCard = visibleCards[currentIndex];
+        
+        const imgSrc = currentCard.getAttribute('data-img');
+        const imgTitle = currentCard.getAttribute('data-title');
+
+        if (imgSrc) {
+          lightboxPlaceholder.innerHTML = `
+            <div class="ratio-4-3" style="max-height: 480px; overflow: hidden; border-radius: var(--radius-sm); margin: 0 auto;">
+              <img src="${imgSrc}" alt="${imgTitle}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+          `;
+        } else {
+          const placeholder = currentCard.querySelector('.image-placeholder').cloneNode(true);
+          lightboxPlaceholder.innerHTML = '';
+          lightboxPlaceholder.appendChild(placeholder);
+        }
+
+        lightboxTitle.textContent = currentCard.getAttribute('data-title');
+        lightboxDesc.textContent = currentCard.getAttribute('data-desc');
+        lightboxCounter.textContent = `${currentIndex + 1} / ${visibleCards.length}`;
+
+        lightbox.classList.add('is-active');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('is-active');
+        lightbox.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      // Card click listener
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          const idx = visibleCards.indexOf(card);
+          if (idx !== -1) {
+            openLightbox(idx);
+          }
+        });
+      });
+
+      // Controls
+      closeBtn.addEventListener('click', closeLightbox);
+      prevBtn.addEventListener('click', () => openLightbox(currentIndex - 1));
+      nextBtn.addEventListener('click', () => openLightbox(currentIndex + 1));
+
+      // Close on backdrop click
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      // Keyboard support
+      window.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('is-active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') openLightbox(currentIndex - 1);
+        if (e.key === 'ArrowRight') openLightbox(currentIndex + 1);
+      });
+    });
+  </script>
+</body>
+</html>
